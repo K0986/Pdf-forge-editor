@@ -1,0 +1,25 @@
+name = "pdfforge"
+main = "worker/index.ts"
+compatibility_date = "2024-09-30"
+compatibility_flags = ["nodejs_compat"]
+
+# Static Assets (Frontend built with Vite)
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+
+# Cloudflare D1 SQL Database Binding
+[[d1_databases]]
+binding = "DB"
+database_name = "pdfforge_production"
+database_id = "pdfforge-d1-db-id"
+migrations_dir = "db/migrations"
+
+# Cloudflare R2 Object Storage Bucket Binding
+[[r2_buckets]]
+binding = "DOCUMENTS_BUCKET"
+bucket_name = "pdfforge-documents"
+preview_bucket_name = "pdfforge-documents-preview"
+
+[vars]
+ENVIRONMENT = "production"

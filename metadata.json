@@ -1,0 +1,6 @@
+{
+  "name": "PDFForge - Professional Browser PDF Editor",
+  "description": "Desktop-grade browser PDF editor with inline text editing, Canva-style canvas positioning, Acrobat page tools, Word formatting, signatures, forms, OCR, and local-first privacy.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
